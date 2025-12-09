@@ -18,6 +18,22 @@ To ensure absolute immutability and intellectual priority, this work is cryptogr
 ## 📊 Dataset & Methodological Information
 The file `arquivo_English.csv` contains over 70,000 records validated up to the 1 trillion ($10^{12}$) range. The empirical data corroborates the theoretical proof published in specialized journals.
 
+## 📁 Data Resources & Verification Strategy
+
+This repository provides two data resources to facilitate verification:
+
+1.  **Sample Data (`sample_data_verification.csv`):** A small extract (first 500 rows) instantly viewable on GitHub for quick structural validation.
+2.  **Full Dataset (`twin_prime_dataset_full.zip`):** Contains the complete 1.25 GB dataset (70,000+ records). This file must be downloaded and manually unzipped for full statistical reproduction.
+
+### Verification of Full Integrity:
+
+**NOTE:** The published SHA-256 Hash (`5A2D441E...`) refers to the integrity of the **full, uncompressed CSV file** located inside the ZIP archive.
+
+To verify the integrity of the full dataset:
+1.  Download and extract `twin_prime_dataset_full.zip`.
+2.  Generate the SHA-256 hash of the extracted CSV file.
+3.  The generated hash MUST match the hash published in the Provenance section above.
+
 ### Column Definitions (Data Dictionary):
 * **`ct`**: Prime counter, representing the sequence of primes used in the Sieve.
 * **`numero`**: The largest prime in set $Q$ ($q_{Max}$).
